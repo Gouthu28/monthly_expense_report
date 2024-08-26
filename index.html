@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Expense Report</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Monthly Expense Report</h1>
+
+    <div>
+        <label for="month">Month:</label>
+        <input id="month" type="text" class="editable-field" placeholder="Enter Month">
+        <label for="year">Year:</label>
+        <input id="year" type="text" class="editable-field" placeholder="Enter Year">
+    </div>
+
+    <textarea class="notes" placeholder="Enter additional notes here..."></textarea>
+
+    <table id="expenseTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Date</th>
+                <th>Area of Work</th>
+                <th>Mode of Travel</th>
+                <th>Kilometers Traveled</th>
+                <th>Travel Bill</th>
+                <th>Allowance</th>
+                <th>Petrol Bill</th>
+                <th>Hotel Bill</th>
+                <th>Other Expenses</th>
+                <th>Total Expense</th>
+                <th>Remark</th>
+            </tr>
+        </thead>
+        <tbody id="expenseBody">
+            <!-- Rows will be dynamically added here -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="11" class="total">Grand Total:</td>
+                <td class="total-amount" id="grandTotal">$0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <button class="add-row-btn" onclick="addRow()">Add Row</button>
+    <button onclick="exportToExcel()">Save as Excel</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

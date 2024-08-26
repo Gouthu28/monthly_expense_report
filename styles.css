@@ -1,0 +1,49 @@
+/* Add your CSS styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+textarea.notes {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.total-amount {
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
